@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bookmarklets</title>
+</head>
+<body>
+<a href="javascript:(function()%7Bfor%20(let%20i%20%3D%200%3B%20i%20%3C%20document.querySelectorAll('%5Bdata-test-section%3D%22layer-metric-row%22%5D').length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20const%20row%20%3D%20document.querySelectorAll('%5Bdata-test-section%3D%22layer-metric-row%22%5D')%5Bi%5D.querySelector('.oui-token--font-light')%0A%20%20%20%20document.body.innerHTML%20%2B%3D%20%60%3Cli%3E%24%7Brow.innerText.replace(%2F%5B%5Cn%5Cr%5D%2B%7C%5B%5Cs%5D%7B2%2C%7D%2Fg%2C%20'%20%7C%20').trim().split('%7C')%5B0%5D%7D%3C%2Fli%3E%60%0A%7D%7D)()%3B">Metrics</a>
+</body>
+</html>
